@@ -23,19 +23,35 @@
     <body>
         
         
-        <div id="botones" class="btn-group"></div>
-        <div id="comprobar"></div> 
-            
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 style="white-space: nowrap;font-size: 5vw">TEST DE VERBOS IRREGULARES</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8">
+                    <div id="botones" class="btn-group"></div>
+                    <div id="comprobar"></div>            
+                </div>
+              
+                <div class="col-xs-2"></div>
+            </div>
+        </div>
+        
+        
+        
         <script>
             var siguiente;
             
             siguiente = Math.floor(Math.random() * verbos.length);
             
-            $('#botones').append('<button id="boton1" class="btn btn-warning">'+verbos[siguiente][0]+' </button>');
-            $('#botones').append('<button id="boton2" class="btn btn-warning">'+verbos[siguiente][1]+' </button>');
-            $('#botones').append('<button id="boton3" class="btn btn-warning">'+verbos[siguiente][2]+' </button>');
-            
-            $('#comprobar').append('<button id="boton3" class="btn btn-info">'+verbos[siguiente][3]+' </button>');
+            $('#botones').append('<button id="boton1" class="btn btn-warning btn-block">'+verbos[siguiente][0]+' </button>');
+            $('#botones').append('<button id="boton2" class="btn btn-warning btn-block">'+verbos[siguiente][1]+' </button>');
+            $('#botones').append('<button id="boton3" class="btn btn-warning btn-block">'+verbos[siguiente][2]+' </button>');
+
+            $('#comprobar').append('<button id="boton3" class="btn btn-info btn-block">'+verbos[siguiente][3]+' </button>');
         </script>    
         
     </body>
